@@ -34,7 +34,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <h1>Hi! I'm Shrouk</h1>
     <h1>Every dataset tells a story — I uncover it</h1>
     <p>Turning data into clear insights to help businesses make desicion</p>
-      <!-- زرار الـ contact me -->
+
   <a href="#contact" target="_blank" class="btn">Contact Me</a>
 
     
@@ -155,7 +155,65 @@ to create measurable impact.
 
 <section id="projects">
     <h2>Projects</h2>
+    <div class="projects-container">
+    <div class="project-card">
 
+    <div class="project-images">
+    <img src="project_img.jpg">
+    </div>
+  <h3 class="project-title">
+    California Housing Price Prediction
+  </h3>
+
+  <p class="project-description">
+    A machine learning project that predicts housing prices in California using regression models. It includes preprocessing, feature engineering, and model evaluation.
+  </p>
+
+  <div class="project-tags">
+    <span>Python</span>
+    <span>ML</span>
+    <span>Scikit-learn</span>
+  </div>
+
+  <ul>
+    <li>Data preprocessing</li>
+    <li>Model comparison</li>
+    <li>RMSE evaluation</li>
+  </ul>
+
+  <a href="https://github.com/Shery-M/California-Housing-Price-Prediction" target="_blank">
+    View on GitHub
+  </a>
+    </div>
+
+  <div class="project-card">
+    <div class="project-images">
+    <img src="project2_img.jpg">
+    </div>
+    <h3 class="project-title">
+    Recipe Website (Cook Book)
+    </h3>
+    <p class="project-description">
+    Dynamic website with filtering and localStorage functionality.</p>
+    <div class="project-tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Java Script</span>
+    </div>
+    <ul>
+    <li>Responsive web design</li>
+    <li>Recipe filtering by category</li>
+    <li>Dynamic content rendering using JavaScript</li>
+    <li>LocalStorage for saving selected recipes</li>
+    <li>User-friendly interface and navigation</li>
+    </ul>
+    <a href="https://github.com/Shery-M/Recipe-Finder-Website-HTML-CSS-JS" target="_blank">
+    View on GitHub
+    </a>
+    </div>
+  
+</div>
+<!--
     <div class="project-card">
         <h3>InvestWise</h3>
         <p>Java desktop application for asset management and Zakat calculation.</p>
@@ -166,11 +224,8 @@ to create measurable impact.
         <p>C# console app connected to SQL Server database.</p>
     </div>
 
-    <div class="project-card">
-        <h3>Recipe Website</h3>
-        <p>Dynamic website with filtering and localStorage functionality.</p>
-    </div>
-
+    
+-->
 </section>
 
 <section id="contact">
@@ -183,7 +238,7 @@ to create measurable impact.
     <p class="contact-subtext">
         I’m just one message away.
     </p>
-        <!-- الأيقونات -->
+    
     <div class="social-icons">
         <a href="https://github.com/Shery-M" target="_blank">
         <i class="fab fa-github"></i>
@@ -228,6 +283,17 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.project-card');
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+      }, index * 200); // كل كارد هيظهر بعد التاني بـ 200 مللي ثانية
+    });
+  });
 </script>
 </body>
 </html>
